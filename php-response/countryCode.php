@@ -4,6 +4,7 @@
       $ip = $_POST['ip'];
       if(!empty($_POST['ip'])) {
         $result = @file_get_contents("https://api.revplit.com/geo/countryCode.php?ip=".$ip);
+        // if you get a weird number instead please report it.
       } else {
            $result = "No IP filled in";
         }
